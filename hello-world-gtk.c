@@ -1,4 +1,3 @@
-/*gcc `pkg-config --cflags --libs gtk+-2.0` hello-world-gtk.c -o GTK_start -lwiringPi*/
 #include <gtk/gtk.h>
 #include <wiringPi.h>
 #include <stdio.h>
@@ -17,7 +16,6 @@ void toggle1(GtkWidget *wid, gpointer ptr)
     gtk_main_iteration();
   digitalWrite(17, HIGH); // On
   delay(2000);
-  // sleep(2);
 
   gtk_label_set_text(GTK_LABEL(ptr), "gpio 17 off");
   while (gtk_events_pending())
@@ -118,11 +116,9 @@ int main(int argc, char *argv[])
   gtk_table_attach_defaults(GTK_TABLE(tbl), input2, 5, 10, 6, 7);
   gtk_table_attach_defaults(GTK_TABLE(tbl), btn, 10, 11, 8, 9);
 
-  //box toevoegen aan window
   gtk_container_add(GTK_CONTAINER(win), tbl);
 
   gtk_widget_show_all(win);
 
   gtk_main();
-  // return 0;
 }
