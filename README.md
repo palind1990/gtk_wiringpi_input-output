@@ -2,10 +2,8 @@
 ***gtk application to toggle and read gpio pin using wiringpi.***
 
 ## Usage
-
-## hello-world-gtk.c
 ```bash
-# install library wiringpi
+# install library wiringpi on pi4
 cd /tmp
 wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
