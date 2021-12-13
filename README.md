@@ -14,6 +14,6 @@ gpio -v
 # build
 gcc `pkg-config --cflags --libs gtk+-2.0` hello-world-gtk.c -o GTK_start -lwiringPi
 
-# run (2 terminals)
+# run
 use vnc-viewer to run application
  ```
