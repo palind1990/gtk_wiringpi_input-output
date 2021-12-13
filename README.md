@@ -8,6 +8,9 @@ cd /tmp
 wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
 
+# install gtk
+sudo apt-get install libgtk-3-dev
+
 #check with:
 gpio -v
 
