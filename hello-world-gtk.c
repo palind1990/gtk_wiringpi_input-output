@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
   gtk_window_set_position(GTK_WINDOW(win), GTK_WIN_POS_CENTER);
 
   //widgets toevoegen aan tabel
-  gtk_table_attach_defaults(GTK_TABLE(tbl), lbl, 1, 11, 0, 1); // 1ste nummer < 2de nummer, 3de nummer < 4de nummer (eerste 2 zijn de breedte, laatste 2 zijn de hoogte)
+  gtk_table_attach_defaults(GTK_TABLE(tbl), lbl, 1, 11, 0, 1); 
   gtk_table_attach_defaults(GTK_TABLE(tbl), btn2, 1, 5, 1, 2);
   gtk_table_attach_defaults(GTK_TABLE(tbl), btn3, 5, 10, 1, 2);
 
